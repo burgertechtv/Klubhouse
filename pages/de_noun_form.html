@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<!--Form Section-->
+<div class="container">
+	<div class="row">
+	  <div class="col-xs-3 col-centered"> </div>
+	  <div class="col-xs-6 col-centered">
+	  	
+	  	<!--Form Element-->
+			<form id="nounForm" class="form-horizontal" action="de_nouns.php" method="get">
+		        <h1>English</h1>
+		        <div class="form-group">
+		          
+		          <label class="control-label col-sm-2 align-left"  for="email">
+		            Definition:
+		          </label> <!--English Defintion Label -->
+
+		          <div class="col-sm-12">
+		          
+		          <!--English Defintion -->
+		            <input id="email" name="en_def" type="text" class="form-control"  
+		            	placeholder="Enter English Word">
+		            		    <!--ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ 
+		            		  	English Placeholder Text -->
+		          </div>  
+		        </div>
+		        
+		        <!-- GERMAN ENTRY SECTION -->
+		        <h1>German</h1>
+		        
+		        <div class="form-group">
+		          <label class="control-label col-sm-2 align-left" for="gender">
+		            Gender  <!-- German Gender Label -->
+		          </label>
+		          <!-- German Gender Radio Buttons -->
+		          <div class="col-sm-12 radio">
+		            <label><input id="genderDer" name="de_g" type="radio" value="der">Male: der</label>
+		            <label><input id="genderDie" name="de_g" type="radio" value="die">Female: die</label>
+		            <label><input id="genderDas" name="de_g" type="radio" value="das">Neuter: das</label>
+		          </div>
+		        </div>        
+		        
+		        
+		        <div class="form-group">
+		          <label class="control-label col-sm-2 align-left" for="pwd">
+		            Singular</label>
+		          <div class="col-sm-12">
+		            <input id="GermanSingular" name="de_s" type="text" class="form-control"  
+		              placeholder="Enter Singular Form of German Word">
+		              		  <!--ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ
+		              			German Placeholder Text -->
+		          </div>
+		        </div>
+		
+		        <div class="form-group">
+		          <label class="control-label col-sm-2 align-left" for="pwd">
+		            Plural</label>
+		          <div class="col-sm-12">
+		            <input id="GermanPlural" name="de_p" type="text" class="form-control" 
+		              placeholder="Enter Plural Form of German Word">
+		              		  <!--ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ
+		              			German Placeholder Text -->
+		          </div>
+		        </div>
+		        <div class="form-group">
+		          <div class="text-center">
+		            <button id="nounSubmitBtn" type="submit" class="btn btn-success  btn-default text-center">Submit</button>
+		          </div>
+		        </div>
+			</form>
+			<div class="col-xs-3 col-centered"> </div>
+		</div>
+	</div>
+</div>
+<!--End Form Section-->
+
+ 
+<div id="footer">
+  <div class="container">
+	<p>Developed by Rob Burger <a href="https://github.com/burgertechtv"> @Burgertech </p>
+  </div>
+</div>
+
+<script type="text/javascript" src="./js/app.js"></script>
+<script type="text/javascript" src="./js/appv2.js"></script>
+
+</body>
+</html>
+	
